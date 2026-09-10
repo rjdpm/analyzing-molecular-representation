@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+!*/
+# But don't ignore these file types
+!*.ipynb
+!*.py
+
+# Also, don't ignore .gitignore itself
+!.gitignore
