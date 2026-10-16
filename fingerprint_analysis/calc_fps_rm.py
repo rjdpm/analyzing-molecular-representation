@@ -5,14 +5,12 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import multiprocessing as mp
-from collections import defaultdict, OrderedDict
-from orderedset import OrderedSet
-from typing import Any, List, Dict, Tuple, Union, Set, Callable, Optional
+from collections import OrderedDict
+from typing import List, Tuple
 
 from rdkit import Chem, DataStructs
 from rdkit.Chem import AllChem, rdMolDescriptors
 from rdkit.Chem.rdFingerprintGenerator import GetMorganGenerator, AdditionalOutput
-from rdkit.Chem.MolStandardize import rdMolStandardize
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
